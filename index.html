@@ -1,0 +1,35 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WerkRapport</title>
+<style type="text/css"></style></head>
+
+<body>
+
+
+<h1>Arco Werkrapport</h1>
+
+
+<form name="Rapport" action="sendmail.php" method="POST">
+			<label for="name">Medewerker:</label>
+			<input type="text" id="name" name="name" placeholder="Naam Medewerker" list="medewerkers"><datalist id="medewerkers"><option value="Christiaan"></option><option value="Henk-Pieter"></option><option value="Rene"></option> </datalist> 
+			<br />
+			<label for="subject">Klant:</label>
+			<input type="text" id="subject" name="subject" placeholder="Klantnaam" />
+			<br />
+			<label for="date">Datum:</label>
+			<input type="date" name="datum" />
+			<br />
+			<label for="message">Gedaan:</label>
+			<textarea id="message" name="message" placeholder="Rapport..."></textarea>
+			<br />
+			<label for="number">Tijd:</label>
+			<input type="number" name="tijd" min="15" max="36000" value="15" step="15" />
+			</br></br>
+			<input type="submit" name="submit" value="Akkoord" />
+</form>
+
+
+
+
+
+</body></html>
